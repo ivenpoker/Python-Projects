@@ -3,7 +3,7 @@
 """
     Program purpose: Swaps the case of alphabetic characters in a string.
     Program author : Happi Yvan
-    Program email  : ivensteinpoker@gmail.com
+    Author email   : ivensteinpoker@gmail.com
 """
 
 def swap_case(some_str):
