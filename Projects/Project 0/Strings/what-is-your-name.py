@@ -1,5 +1,10 @@
-#!/usr/bin/env      python3
+#!/usr/bin/env python3
 
+"""
+    Program Purpose: Gets two names from console and prints greetings
+    Program Author : Happi Yvan
+    Author  email  : ivensteinpoker@gmail.com
+"""
 def main():
     first_name = input("\n\tEnter first name: ")
     last_name = input("\tEnter last name : ")
