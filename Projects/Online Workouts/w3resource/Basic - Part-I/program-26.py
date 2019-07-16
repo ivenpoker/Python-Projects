@@ -1,8 +1,8 @@
-#!/usr/bin/env  python3
+# !/usr/bin/env  python3
 
 #############################################################################
 #                                                                           #
-#       Program purpose: Checks if a letter is a vowel.                     #
+#       Program purpose: Displays a histogram from list data                #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>              #
 #       Creation Date  : July 14, 2019                                      #
 #                                                                           #
@@ -10,14 +10,14 @@
 
 # URL: https://www.w3resource.com/python-exercises/python-basic-exercises.php
 
-
-def is_vowel(some_lett):
-    return some_lett[:1] in "aeiou"
+def histogram(someList, char):
+    for x in someList:
+        while x > 0:
+            print(f"{char}", end='')
+            x = x-1
+        print(f"\n")
 
 
 if __name__ == "__main__":
-    user_lett = input("Enter a letter to check if vowel: ")
-    if is_vowel(user_lett):
-        print(f"Letter {user_lett} is a vowel")
-    else:
-        print(f"Letter {user_lett} is NOT a vowel")
+    randList = [3, 7, 4, 2, 6]
+    histogram(randList, '*')

@@ -2,7 +2,8 @@
 
 #############################################################################
 #                                                                           #
-#       Program purpose: Checks and compute a sum based on some property    #
+#       Program purpose: Returns 'n' copies of the first two characters in  #
+#                        string.                                            #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>              #
 #       Creation Date  : July 14, 2019                                      #
 #                                                                           #
