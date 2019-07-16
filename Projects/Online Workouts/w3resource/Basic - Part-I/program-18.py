@@ -23,3 +23,4 @@ if __name__ == "__main__":
 
     print("Their sum is: {}".format(sum_thrice(intA, intB, intC)))
 
+
