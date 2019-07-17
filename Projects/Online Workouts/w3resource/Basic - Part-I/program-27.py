@@ -5,7 +5,7 @@
 #       Program purpose: Concatenates content of list as string and return  #
 #                        the results.                                       #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>              #
-#       Creation Date  : July 14, 2019                                      #
+#       Creation Date  : July 17, 2019                                      #
 #                                                                           #
 #############################################################################
 
