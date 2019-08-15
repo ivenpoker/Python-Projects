@@ -2,7 +2,7 @@
 
 #######################################################################################
 #                                                                                     #
-#       Program purpose: Get file creation and modification date/times.               #
+#       Program purpose: Convert seconds to day, hour, minutes and seconds               #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
 #       Creation Date  : August 15, 2019                                              #
 #                                                                                     #
