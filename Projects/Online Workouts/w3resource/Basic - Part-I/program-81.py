@@ -4,7 +4,7 @@
 #                                                                                     #
 #       Program purpose: Concatenates N-strings.                                      #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
-#       Creation Date  : August 19, 2019                                              #
+#       Creation Date  : August 27, 2019                                              #
 #                                                                                     #
 #######################################################################################
 
