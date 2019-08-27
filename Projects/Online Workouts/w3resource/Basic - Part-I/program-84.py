@@ -3,6 +3,7 @@
 #######################################################################################
 #                                                                                     #
 #       Program purpose: Count number of specific characters in a string.             #
+#       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
 #       Creation Date  : August 27, 2019                                              #
 #                                                                                     #
 #######################################################################################
