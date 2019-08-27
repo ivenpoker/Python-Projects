@@ -5,7 +5,7 @@
 #       Program purpose: Test whether system is big-endian platform or little-endian  #
 #                        platform.                                                    #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
-#       Creation Date  : August 19, 2019                                              #
+#       Creation Date  : August 17, 2019                                              #
 #                                                                                     #
 #######################################################################################
 
