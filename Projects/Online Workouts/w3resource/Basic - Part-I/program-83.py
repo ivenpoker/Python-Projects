@@ -2,26 +2,51 @@
 
 #######################################################################################
 #                                                                                     #
-#       Program purpose: Count number of specific characters in a string.             #
+#       Program purpose: Checks if all numbers in a list are greater than a certain   #
+#                        number.                                                      #
+#       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
 #       Creation Date  : August 27, 2019                                              #
 #                                                                                     #
 #######################################################################################
 
-def find_count(char='', string=""):
-    count = 0
-    for x in range(len(string)):
-        if string[x] == char:
-            count += 1
-    return count
+import random
+
+def fill_list(low=0, high=100, list_size=100):
+    data = []
+    for x in range(list_size):
+        data.append(random.randint(low, high-1))
+    return data
+
+def print_list(tmp_msg="", data=None, break_pt=5):
+    if data is None:
+        data = []
+    print(f"\n{tmp_msg}: \n")
+
+    for x in range(len(data)):
+        if x % break_pt == 0 and x != 0:
+            print("%02d" % (data[x]))
+        else:
+            print("%02d " % (data[x]), end="")
+    print("")
+
+def all_values_greater_than(key=0, data=None):
+    if data is None:
+        return False
+
+    for x in range(len(data)):
+        if data[x] < key:
+            return False
+
+    return True
+
 
 if __name__ == "__main__":
-    user_str = str(input("Enter a sentence: "))
-    key_char = str(input("Enter a search character: "))
+    random_data = fill_list(low=0, high=100, list_size=100)
+    print_list(tmp_msg="Generated data", data=random_data, break_pt=10)
 
-    while len(key_char) is not 1:
-        key_char = str(input("Enter a SINGLE search character: "))
+    key_val = int(input("\nEnter test integer: "))
 
-    cnt = find_count(char=key_char, string=user_str)
-    print(f"Number of '{key_char}' in string is: {cnt}")
-
-
+    if all_values_greater_than(key=key_val, data=random_data):
+        print(f"\nAll values are greater than {key_val}")
+    else:
+        print(f"\nThere is/are value(s) greater than {key_val} in data.")
