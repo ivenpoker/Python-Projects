@@ -3,7 +3,7 @@
 
 #######################################################################################
 #                                                                                     #
-#       Program purpose: To check if a file path is file or a directory.           #
+#       Program purpose: To check if a file path is file or a directory.              #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
 #       Creation Date  : August 19, 2019                                              #
 #                                                                                     #
