@@ -12,8 +12,8 @@ from http.client import HTTPConnection
 
 if __name__ == "__main__":
 
-    userURL = input("Enter some URL: ")
-    conn = HTTPConnection("example.com")
+    userURL = input("Enter some host [ex: example.com]: ")
+    conn = HTTPConnection(userURL)
     conn.request("GET", "/")
     result = conn.getresponse()
     # retrieves the entire contents.
