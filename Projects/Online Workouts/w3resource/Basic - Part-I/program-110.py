@@ -5,7 +5,7 @@
 #       Program purpose: Get numbers divisible by 15 from a list using an anonymous   #
 #                        function.                                                    #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
-#       Creation Date  : August 30, 2019                                              #
+#       Creation Date  : September 1, 2019                                            #
 #                                                                                     #
 #######################################################################################
 
