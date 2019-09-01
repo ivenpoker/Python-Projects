@@ -14,8 +14,9 @@ def random_list(size=10):
 def remove_first(someList=[]):
     if len(someList) is 0:
         return []
+    del someList[0]
 
-    return someList[1:]
+    return someList
 
 if __name__ == "__main__":
     rand_list = random_list(20)
