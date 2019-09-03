@@ -2,7 +2,7 @@
 
 #######################################################################################
 #                                                                                     #
-#       Program purpose: Print a variable without spaces between values.                  #
+#       Program purpose: Print a variable without spaces between values.              #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
 #       Creation Date  : September 2, 2019                                            #
 #                                                                                     #
