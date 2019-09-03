@@ -40,9 +40,23 @@ if __name__ == '__main__':
     print("-------------------------")
 
     # OR we could just do this
+
     if isinstance(varA, set):
         print(f"Type for varA is set")
     if isinstance(varB, list):
         print(f"Type for varB is list")
     if isinstance(varC, tuple):
         print(f"Type for varC is tuple")
+
+    print("--------------------------")
+
+    # OR we could just do this again as such...
+
+    if type(varA) is set:
+        print("varA is a set")
+
+    if type(varB) is list:
+        print("varB is a list")
+
+    if type(varC) is tuple:
+        print("varC is a tuple")
