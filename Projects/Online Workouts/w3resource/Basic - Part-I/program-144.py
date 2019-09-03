@@ -23,3 +23,8 @@ if __name__ == '__main__':
     print(f"Variable type of varA: {find_type(varA)}")
     varB = str("james")
     print(f"Variable type of varB: {find_type(varB)}")
+
+    # OR we could still do this
+    print(isinstance(25, int) or isinstance(25, str))
+    print(isinstance([25], int) or isinstance([25], str))
+    print(isinstance("25", int) or isinstance("25", str))
