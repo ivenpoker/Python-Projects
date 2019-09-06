@@ -3,7 +3,7 @@
 ########################################################################
 #                                                                      #
 #       Program purpose: Get all possible two digit letter combination #
-#                        from a digit.
+#                        from a digit.                                 #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>         #
 #       Creation Date  : September 6, 2019                             #
 #                                                                      #
