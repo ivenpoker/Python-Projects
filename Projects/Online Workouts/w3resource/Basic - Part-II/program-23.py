@@ -5,7 +5,7 @@
 #       Program purpose: Accept a positive number and subtract from this  #
 #                        number the sum of its digits and so on.          #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>            #
-#       Creation Date  : September 6, 2019                                #
+#       Creation Date  : September 9, 2019                                #
 #                                                                         #
 ###########################################################################
 
