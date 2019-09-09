@@ -3,7 +3,7 @@
 ###########################################################################
 #                                                                         #
 #       Program purpose: Determines if a list of integer is an Arithmetic #
-#                        or Geometric progression.
+#                        or Geometric progression.                        #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>            #
 #       Creation Date  : September 9, 2019                                #
 #                                                                         #
