@@ -4,11 +4,11 @@
 #                                                                            #
 #       Program purpose: Reverse the digits of a given number and add it to  #
 #                        the original, if the sum is not a palindrome repeat #
-#                        the procedure.
+#                        the procedure.                                      #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>               #
 #       Creation Date  : September 9, 2019                                   #
 #                                                                            #
-#############################################################################
+##############################################################################
 
 def reverse_digits(num: int):
     digit_list = list(f"{num}")
