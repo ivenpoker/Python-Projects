@@ -37,6 +37,6 @@ if __name__ == '__main__':
             print(f"[ERROR]: {ve}")
 
     temp = 1
-    while temp != max_passwords:
+    while temp != max_passwords+1:
         print(f"Password #{temp}: {generate_password(size=password_len)}")
         temp += 1
