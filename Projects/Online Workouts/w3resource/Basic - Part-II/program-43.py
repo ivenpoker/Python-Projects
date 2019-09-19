@@ -4,7 +4,7 @@
 #                                                                               #
 #       Program purpose: Test whether two lines are parallel.                   #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                  #
-#       Creation Date  : September 10, 2019                                     #
+#       Creation Date  : September 19, 2019                                     #
 #                                                                               #
 #################################################################################
 
