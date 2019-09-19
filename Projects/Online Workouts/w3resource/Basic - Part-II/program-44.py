@@ -6,7 +6,7 @@
 #                        a given sequence of numbers. Subsequence of one element #
 #                        is also a subsequence.                                  #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                   #
-#       Creation Date  : September 10, 2019                                      #
+#       Creation Date  : September 19, 2019                                      #
 #                                                                                #
 ##################################################################################
 
