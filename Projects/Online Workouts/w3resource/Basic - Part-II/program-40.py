@@ -28,6 +28,7 @@ class Point:
         return f"pt-[{self.x}, {self.y}]"
 
 def read_point(input_mess: str):
+
     valid = False
     pt = Point(0, 0)
 
@@ -42,6 +43,7 @@ def read_point(input_mess: str):
     return pt
 
 def check_in_triangle(triangle_points, check_pt: Point):
+
     x1, y1 = triangle_points[0].get_x(), triangle_points[0].get_y()
     x2, y2 = triangle_points[0].get_x(), triangle_points[0].get_y()
     x3, y3 = triangle_points[0].get_x(), triangle_points[0].get_y()
@@ -54,6 +56,7 @@ def check_in_triangle(triangle_points, check_pt: Point):
     return (c1 < 0 and c2 < 0 and c3 < 0) or (c1 > 0 and c2 > 0 and c3 > 0)
 
 if __name__ == "__main__":
+
     pointA = read_point("Enter triangle point A [as -> x y]: ")
     pointB = read_point("Enter triangle point B [as -> x y]: ")
     pointC = read_point("Enter triangle point C [as -> x y]: ")
