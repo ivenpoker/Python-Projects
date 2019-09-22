@@ -34,9 +34,6 @@ def swap_substr(main_str: str, sub_a: str, sub_b: str):
             i += 1
     return main_str
 
-
-
-
 if __name__ == "__main__":
 
     data = read_string(mess="Enter some string with 'Python' and 'Java': ")
