@@ -7,7 +7,7 @@
 #                        to another given number (s). Not using the same digits in #
 #                        a combination.                                            #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                     #
-#       Creation Date  : September 19, 2019                                        #
+#       Creation Date  : September 22, 2019                                        #
 #                                                                                  #
 ####################################################################################
 
