@@ -51,8 +51,8 @@ def num_factors(some_num: int):
 
 if __name__ == "__main__":
     even_num = 1
-    while even_num % 2 != 0:
-        even_num = read_data(mess="Enter an even number: ")
+    while even_num % 2 != 0 or even_num < 4:
+        even_num = read_data(mess="Enter an even number (>= 4): ")
     comb_num = 0
     while comb_num <= 0:
         comb_num = read_data(mess="Enter number of combinations (>= 1): ")
