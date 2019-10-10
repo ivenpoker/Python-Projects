@@ -4,7 +4,7 @@
 #                                                                                    #
 #       Program purpose: Computes the area of the polygon.                           #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                       #
-#       Creation Date  : October 10, 2019                                          #
+#       Creation Date  : October 10, 2019                                            #
 #                                                                                    #
 ######################################################################################
 
