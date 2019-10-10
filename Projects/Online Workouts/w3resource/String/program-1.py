@@ -9,7 +9,10 @@
 ######################################################################################
 
 def find_string_length(main_str: str):
-    return len(main_str)
+    length = 0
+    for ch in main_str:
+        length += 1
+    return length
 
 if __name__ == "__main__":
     some_str = input('Enter some string to compute length: ')
