@@ -1,3 +1,5 @@
+#!/usr/bin/env  python3
+
 ######################################################################################
 #                                                                                    #
 #       Program purpose: Adds up columns and rows of given table (matrix).           #
