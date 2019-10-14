@@ -4,7 +4,7 @@
 #                                                                                     #
 #       Program purpose: Adds HTML string tags around word(s) in text.                #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
-#       Creation Date  : October 15, 2019                                             #
+#       Creation Date  : October 14, 2019                                             #
 #                                                                                     #
 #######################################################################################
 
