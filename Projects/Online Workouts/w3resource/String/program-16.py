@@ -4,7 +4,7 @@
 #                                                                                     #
 #       Program purpose: Inserts a string in the middle of another string.            #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                        #
-#       Creation Date  : October 15, 2019                                             #
+#       Creation Date  : October 14, 2019                                             #
 #                                                                                     #
 #######################################################################################
 
