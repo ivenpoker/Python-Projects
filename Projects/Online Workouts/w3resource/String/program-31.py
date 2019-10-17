@@ -15,8 +15,8 @@ def obtain_user_data(input_mess: str):
         try:
             user_data = float(input(input_mess))
             is_valid = True
-        except RuntimeError as re:
-            print(f"[ERROR]: {re}")
+        except ValueError as ve:
+            print(f"[ERROR]: {ve}")
     return user_data
 
 if __name__ == "__main__":
