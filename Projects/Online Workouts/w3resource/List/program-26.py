@@ -4,7 +4,7 @@
 #                                                                                          #
 #       Program purpose: Checks whether two lists are circularly identical.                #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
-#       Creation Date  : November 11, 2019                                                 #
+#       Creation Date  : November 12, 2019                                                 #
 #                                                                                          #
 ############################################################################################
 
