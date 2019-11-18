@@ -8,6 +8,8 @@
 #                                                                                          #
 ############################################################################################
 
+import ast
+
 def obtain_use_str(input_mess: str) -> str:
     user_data, is_valid = '', False
     while is_valid is False:
@@ -29,5 +31,11 @@ if __name__ == "__main__":
     list_str = convert_str_to_list(main_str=main_data)
 
     print(f'Conversion to list: {list_str}')
+
+    # Convert a 'stringified' list to list.
+
+    temp_color = "['Red', 'Green', 'White']"
+    print(f'Stringified list: {temp_color}')
+    print(f'List version of string: {ast.literal_eval(temp_color)}')
 
 
