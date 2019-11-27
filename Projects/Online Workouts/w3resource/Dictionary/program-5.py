@@ -2,7 +2,7 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Iterate over a dictionary                             #
+#       Program purpose: Iterate over a dictionary                                         #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : November 27, 2019                                                 #
 #                                                                                          #
