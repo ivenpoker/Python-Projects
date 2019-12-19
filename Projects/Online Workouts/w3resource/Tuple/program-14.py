@@ -2,7 +2,7 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Converts a tuple to a dictionary.                                 #
+#       Program purpose: Computes the length of a tuple.                                   #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : December 19, 2019                                                 #
 #                                                                                          #
@@ -10,21 +10,12 @@
 
 from random import randint
 
-def random_tuples(low: int, high: int, size: int, init_str: str) -> tuple:
+def random_tuple(low: int, high: int, size: int) -> tuple:
     if size < 0:
-        raise ValueError(f'Invalid size ({size}) for tuple(s)')
-    cnt, temp = 0, []
-    for _ in range(size):
-        new_tup = (f'{init_str}{cnt}', randint(low, high))
-        temp.append(new_tup)
-        cnt += 1
-    return tuple(temp)
-
-def tuples_to_dict(main_tuple: tuple) -> dict:
-    return {k: v for (k, v) in main_tuple}
+        raise ValueError(f"Invalid size ({size}) for the new tuple(s)")
+    return tuple([randint(low, high) for _ in range(size)])
 
 if __name__ == "__main__":
-
-    new_tuple_data = random_tuples(low=0, high=10, size=15, init_str='key')
-    print(f'Tuple data: {new_tuple_data}')
-    print(f'Dict equivalent: {tuples_to_dict(main_tuple=new_tuple_data)}')
+    new_tuples = random_tuple(low=0, high=10, size=15)
+    print(f'New generated tuples: {new_tuples}')
+    print(f'Length of tuple is: {len(new_tuples)}')
