@@ -25,7 +25,6 @@ def do_processing(list_A:  list, list_B: list) -> None:
     print(f'Intersection (taking +ve minimums): {cA & cB}\n')
     print(f'Union (taking maximums): {cA | cB}\n')
 
-
 if __name__ == "__main__":
 
     data_A = create_new_list_data(low=0, high=20, size=10)
