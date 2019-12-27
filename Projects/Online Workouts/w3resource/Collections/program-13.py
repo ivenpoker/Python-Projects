@@ -2,7 +2,8 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Rotates a deque object a specified number of times.               #
+#       Program purpose: Rotates (positive direction) a deque object a specified number    #
+#                        of times.                                                         #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : December 27, 2019                                                 #
 #                                                                                          #
