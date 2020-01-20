@@ -2,7 +2,7 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Inserts a new item before the second element in an existing array #
+#       Program purpose: Removes the first occurrence of a specified element from an array #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : January 20, 2019                                                  #
 #                                                                                          #
