@@ -2,7 +2,7 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Prints letter 'R' to the console.                                 #
+#       Program purpose: Prints letter 'S' to the console.                                 #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : January 27, 2019                                                  #
 #                                                                                          #
