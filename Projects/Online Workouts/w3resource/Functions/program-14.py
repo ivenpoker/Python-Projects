@@ -24,7 +24,7 @@ def obtain_user_data(input_str: str) -> str:
 
 def process_data(some_data: str) -> str:
     words = [x.strip() for x in some_data.split('-') if len(x.strip()) > 0]
-    words = sorted(words)       # sorte the 'words'
+    words = sorted(words)       # sort the 'words'
     return '-'.join(words)
 
 if __name__ == "__main__":
