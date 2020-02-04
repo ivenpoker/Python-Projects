@@ -2,7 +2,7 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Sorts dictionary data in list based on some property using lambda #                               #
+#       Program purpose: Sorts dictionary data in list based on some property using lambda #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : February 04, 2020                                                 #
 #                                                                                          #
