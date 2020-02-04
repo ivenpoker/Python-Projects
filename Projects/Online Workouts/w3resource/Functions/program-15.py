@@ -2,35 +2,32 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Creates and prints a list where the values are squares of numbers #
-#                        from a specified size (by user).                                  #
+#       Program purpose: Accepts a hyphen-separated sequence of words as input from user   #
+#                        and prints the words in a hyphen-separated sequence after sorting #
+#                        them alphabetically.                                              #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : February 01, 2020                                                 #
 #                                                                                          #
 ############################################################################################
 
-def obtain_user_data(input_mess: str) -> int:
-    user_size, valid = int(-1), False
+def obtain_user_data(input_str: str) -> str:
+    user_data, valid = '', False
     while not valid:
         try:
-            user_size = int(input(input_mess))
-            if user_size <= 0:
-                raise ValueError("Invalid size. Must be > 0")
+            user_data = input(input_str)
+            if len(user_data) == 0:
+                raise ValueError("Oops, data needed!")
             valid = True
         except ValueError as ve:
             print(f'[ERROR]: {ve}')
-    return user_size
+    return user_data
 
-def get_squares_A(size: int) -> list:
-    squares = []
-    for x in range(1, size+1):
-        squares.append(int(pow(x, 2)))
-    return squares
-
-def get_squares_B(size: int) -> list:
-    return [int(pow(x, 2)) for x in range(1, size+1)]
+def process_data(some_data: str) -> str:
+    words = [x.strip() for x in some_data.split('-') if len(x.strip()) > 0]
+    words = sorted(words)       # sort the 'words'
+    return '-'.join(words)
 
 if __name__ == "__main__":
-    main_size = obtain_user_data(input_mess='Enter max size for squares: ')
-    print(f'Squares list [func A]: {get_squares_A(size=main_size)}')
-    print(f'Squares list [func B]: {get_squares_B(size=main_size)}')
+
+    main_data = obtain_user_data(input_str='Enter some hyphen-separated string: ')
+    print(f'After processing and sorting: {process_data(some_data=main_data)}')

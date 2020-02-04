@@ -2,21 +2,17 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Accesses a function inside a function.                            #
+#       Program purpose: Detect the number of local variables declared in a function.      #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
 #       Creation Date  : February 01, 2020                                                 #
 #                                                                                          #
 ############################################################################################
 
-import typing
+def demo_func(val: int):
+    x = 1
+    y = 2
+    str1 = 'deathshot'
+    print('One shot ... one kill')
 
-def do_test(valA) -> typing.Callable:
-    def add(valB):
-        nonlocal valA
-        valA += 1
-        return valA + valB
-    return add
-
-if __name__ == '__main__':
-    func = do_test(4)
-    print(func(4))
+if __name__ == "__main__":
+    print(f'Number of local variables: {demo_func.__code__.co_nlocals}')
