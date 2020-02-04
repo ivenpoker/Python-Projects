@@ -2,43 +2,36 @@
 
 ############################################################################################
 #                                                                                          #
-#       Program purpose: Computes and prints the Pascal's triangle.                        #
+#       Program purpose: Check if string is a palindrome or not.                           #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
-#       Creation Date  : February 01, 2020                                                 #
+#       Creation Date  : February 04, 2020                                                 #
 #                                                                                          #
 ############################################################################################
 
-def obtain_triangle_size(input_mess: str) -> int:
-    user_size, valid = int(-1), False
+def obtain_user_data(input_mess: str) -> str:
+    user_data, valid = str(''), False
     while not valid:
         try:
-            user_size = int(input(input_mess))
-            if user_size < 0:
-                raise ValueError("Invalid triangle size. Must be > 0")
+            user_data = input(input_mess)
+            if len(user_data) == 0:
+                raise ValueError('Oops, data needed')
             valid = True
         except ValueError as ve:
             print(f'[ERROR]: {ve}')
-    return user_size
+    return user_data
 
-def print_triangle(main_size: int) -> None:
-    core_data = []
-    curr_row = []
-    for x in range(1, main_size+1):
-        if x == 1 or x == 2:
-            curr_row.append(1)
-            core_data.append(curr_row[:])
-        else:
-            temp, temp_sum = 1, []
-            while temp < len(curr_row):
-                temp_sum.append(curr_row[temp-1] + curr_row[temp])
-                temp += 1
-            curr_row = curr_row[:1] + temp_sum + curr_row[-1:]
-            core_data.append(curr_row[:])
-
-    for row in core_data:
-        print(row)
+def is_palindrome(some_str: str) -> bool:
+    if not some_str or len(some_str) == 0:
+        return False
+    if len(some_str) == 1:
+        return True
+    if len(some_str) % 2 == 0:
+        tmp_len = int(len(some_str) / 2)
+        return some_str[:tmp_len] == some_str[tmp_len:][::-1]
+    else:
+        tmp_len = int(len(some_str) / 2)
+        return some_str[:tmp_len] == some_str[tmp_len+1:][::-1]
 
 if __name__ == "__main__":
-
-    triangle_size = obtain_triangle_size(input_mess='Enter triangle size: ')
-    print_triangle(main_size=triangle_size)
+    main_data = obtain_user_data(input_mess='Enter string to check if palindrome: ')
+    print(f"Is string a palindrome: {'YES' if is_palindrome(some_str=main_data) else 'NO'}")
