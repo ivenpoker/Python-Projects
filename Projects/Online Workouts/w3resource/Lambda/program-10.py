@@ -4,7 +4,7 @@
 #                                                                                          #
 #       Program purpose: Creates Fibonacci series up to 'n' using lambda.                   #
 #       Program Author : Happi Yvan <ivensteinpoker@gmail.com>                             #
-#       Creation Date  : February 04, 2020                                                 #
+#       Creation Date  : February 05, 2020                                                 #
 #                                                                                          #
 ############################################################################################
 
