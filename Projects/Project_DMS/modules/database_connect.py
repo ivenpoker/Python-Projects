@@ -7,7 +7,7 @@ from mysql.connector import Error
 db_cursor = None
 db_connection = None
 
-def db_connect(host: str, username: str, password: str, callback_error: lambda x: x):
+def db_connect(host: str, username: str, password: str):
     global db_cursor
     global db_connection
 
@@ -26,8 +26,7 @@ def db_connect(host: str, username: str, password: str, callback_error: lambda x
         else:
             raise Error(msg="NOT_CONNECTED_TO_DB")
     except Error as e:
-        if callback_error:
-            callback_error()
+        raise e
 
 
 def close_db_connection():

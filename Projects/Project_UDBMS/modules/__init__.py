@@ -1,3 +1,0 @@
-
-from Projects.Project_UDBMS.modules.database_connect import db_connect
-from Projects.Project_UDBMS.modules.database_connect import close_db_connection
