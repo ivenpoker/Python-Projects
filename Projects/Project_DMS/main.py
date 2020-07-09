@@ -3,7 +3,7 @@
 import os
 
 from mysql.connector import Error
-from modules import db_connect
+from modules import MYSQL_DB_connection
 
 # Initialize UI settings based on terminal size (width)
 
@@ -16,6 +16,9 @@ UI_menu_fill_char = ' '
 # UI_input_fill_width = int(int(os.get_terminal_size()[0]) / 2) + 16
 UI_input_fill_width = 54
 UI_input_fill_char = ' '
+
+__MAIN_db_connection = None
+
 
 def obtain_login_field_data(mess: str) -> str:
     valid = False
@@ -47,10 +50,8 @@ def print_user_login_screen(username: str, password: str) -> None:
     print("")
 
 
-if __name__ == "__main__":
-
+def __login_system_view() -> None:
     is_logged_in = False
-    db_connection = None
     login_error_msg = ""
 
     while not is_logged_in:
@@ -65,12 +66,13 @@ if __name__ == "__main__":
         db_credentials = obtain_login_credentials()
 
         try:
-            db_connection = db_connect(host="localhost",
-                                       username=db_credentials["username"],
-                                       password=db_credentials["password"])
+            db_connection = MYSQL_DB_connection(host="localhost",
+                                                username=db_credentials["username"],
+                                                password=db_credentials["password"])
             is_logged_in = True
         except Error as e:
             login_error_msg = "---> [BAD CREDENTIALS] <---"
 
 
-
+if __name__ == "__main__":
+    __login_system_view()

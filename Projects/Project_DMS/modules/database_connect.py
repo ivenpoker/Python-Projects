@@ -4,33 +4,23 @@ import mysql
 import mysql.connector
 from mysql.connector import Error
 
-db_cursor = None
-db_connection = None
+class MYSQL_DB_connection:
+    def __init__(self, host: str, username: str, password: str):
+        try:
+            self._db_connection = mysql.connector.connect(host=host,
+                                                          username=username,
+                                                          password=password)
+            if self._db_connection.is_connected():
+                self._db_info = self._db_connection.get_server_info()
+                self._db_cursor = self._db_connection.cursor()
+            else:
+                raise Error(msg="NOT_CONNECTED_TO_DB")
+        except Error as error:
+            raise error
 
-def db_connect(host: str, username: str, password: str):
-    global db_cursor
-    global db_connection
+    def close_db_connection(self):
+        if self._db_connection and self._db_connection.is_connected():
+            if self._db_cursor:
+                self._db_cursor.close()
+            self._db_connection.close()
 
-    # If there was any previous connection to the DB,
-    # we close that connection
-    close_db_connection()
-
-    try:
-        db_connection = mysql.connector.connect(host=host,
-                                                username=username,
-                                                password=password)
-        if db_connection.is_connected():
-            db_info = db_connection.get_server_info()
-            print(f"\rConnected to MySQL Server Version {db_info}")
-            db_cursor = db_connection.cursor()
-        else:
-            raise Error(msg="NOT_CONNECTED_TO_DB")
-    except Error as e:
-        raise e
-
-
-def close_db_connection():
-    if db_connection and db_connection.is_connected():
-        if db_cursor:
-            db_cursor.close()
-        db_connection.close()
