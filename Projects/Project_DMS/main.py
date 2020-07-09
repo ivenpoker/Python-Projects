@@ -3,18 +3,19 @@
 import os
 
 from mysql.connector import Error
-from modules import MYSQL_DB_connection
+from database import MYSQL_DB_connection
+from user import init_user_program
 
 # Initialize UI settings based on terminal size (width)
 
-# UI_fill_width = os.get_terminal_size()[0]
-UI_fill_width = 74
-UI_menu_fill_char = ' '
+UI_fill_width = os.get_terminal_size()[0]
+# UI_fill_width = 74
+UI_menu_fill_char = '#'
 
 # Initialize UI settings (for prompts) based on terminal size (width)
 
-# UI_input_fill_width = int(int(os.get_terminal_size()[0]) / 2) + 16
-UI_input_fill_width = 54
+UI_input_fill_width = int(int(os.get_terminal_size()[0]) / 2) + 5
+# UI_input_fill_width = 54
 UI_input_fill_char = ' '
 
 __MAIN_db_connection = None
@@ -37,7 +38,7 @@ def obtain_login_field_data(mess: str) -> str:
 
 def print_main_menu() -> None:
     print()
-    print(" [  DATA-MANAGEMENT-SYSTEM  ] ".center(UI_fill_width, UI_menu_fill_char))
+    print(" [  LIBRARY-DATA-MANAGEMENT-SYSTEM  ] ".center(UI_fill_width, UI_menu_fill_char))
     print()
 
 def obtain_login_credentials() -> dict:
@@ -70,8 +71,11 @@ def __login_system_view() -> None:
                                                 username=db_credentials["username"],
                                                 password=db_credentials["password"])
             is_logged_in = True
+            print(f"LOGGED IN SUCCESS".center(UI_fill_width, " "))
+            init_user_program(username=db_credentials["username"], password=db_credentials["password"])
+
         except Error as e:
-            login_error_msg = "---> [BAD CREDENTIALS] <---"
+            login_error_msg = "[ACCESS DENIED]"
 
 
 if __name__ == "__main__":
