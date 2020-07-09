@@ -75,7 +75,7 @@ def __login_system_view() -> None:
             init_user_program(username=db_credentials["username"], password=db_credentials["password"])
 
         except Error as e:
-            login_error_msg = "[ACCESS DENIED]"
+            login_error_msg = f"[ACCESS DENIED]: {e}"
 
 
 if __name__ == "__main__":
